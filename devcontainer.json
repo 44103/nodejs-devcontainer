@@ -1,0 +1,28 @@
+{
+  "name": "GoogleAppScript docker",
+  "dockerComposeFile": [
+    "docker-compose.yml"
+  ],
+  "service": "nodejs",
+  "remoteUser": "root",
+  "workspaceFolder": "/workdir",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.shell.linux": "zsh"
+      },
+      "extensions": [
+        "sleistner.vscode-fileutils",
+        "ms-vscode.makefile-tools",
+        "fabiospampinato.vscode-todo-plus",
+        "shardulm94.trailing-spaces",
+        "patbenatar.advanced-new-file",
+        "mhutchie.git-graph",
+        "christian-kohler.path-intellisense",
+        "gamunu.vscode-yarn",
+        "esbenp.prettier-vscode",
+        "dbaeumer.vscode-eslint"
+      ]
+    }
+  }
+}

@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  nodejs:
+    build: .
+    working_dir: /workdir
+    command: sleep infinity
+    volumes:
+      - ..:/workdir
+      - ./.gitignore:/workdir/.gitignore
