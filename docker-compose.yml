@@ -3,8 +3,8 @@ version: "3"
 services:
   nodejs:
     build: .
-    working_dir: /workdir
     command: sleep infinity
     volumes:
-      - ..:/workdir
-      - ./.gitignore:/workdir/.gitignore
+      - ..:/work
+      - .zsh_history:/root/.zsh_history
+    working_dir: /work

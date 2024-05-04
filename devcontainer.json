@@ -1,11 +1,11 @@
 {
-  "name": "GoogleAppScript docker",
+  "name": "Node.js",
   "dockerComposeFile": [
     "docker-compose.yml"
   ],
   "service": "nodejs",
   "remoteUser": "root",
-  "workspaceFolder": "/workdir",
+  "workspaceFolder": "/work",
   "customizations": {
     "vscode": {
       "settings": {
@@ -13,16 +13,15 @@
       },
       "extensions": [
         "sleistner.vscode-fileutils",
-        "ms-vscode.makefile-tools",
-        "fabiospampinato.vscode-todo-plus",
         "shardulm94.trailing-spaces",
-        "patbenatar.advanced-new-file",
-        "mhutchie.git-graph",
         "christian-kohler.path-intellisense",
+        "fabiospampinato.vscode-todo-plus",
+        "mhutchie.git-graph",
         "gamunu.vscode-yarn",
         "esbenp.prettier-vscode",
         "dbaeumer.vscode-eslint"
       ]
     }
-  }
+  },
+  "initializeCommand": "touch .devcontainer/.zsh_history"
 }
